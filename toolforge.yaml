@@ -12,5 +12,5 @@ components:
       repository: https://gitlab.wikimedia.org/toolforge-repos/sample-static-buildpack-app
       ref: main
     run:
-      command: echo version-1
+      command: echo from-test-other-branch
       schedule: '@daily'
