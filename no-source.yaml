@@ -8,5 +8,5 @@ components:
       repository: https://gitlab.wikimedia.org/toolforge-repos/sample-static-buildpack-app
       ref: main
     run:
-      command: echo no-source-1
+      command: echo no-source-2
       schedule: '@daily'
