@@ -1,0 +1,12 @@
+defaults:
+  alerts:
+    notify: false
+components:
+  source-test:
+    component_type: scheduled
+    build:
+      repository: https://gitlab.wikimedia.org/toolforge-repos/sample-static-buildpack-app
+      ref: main
+    run:
+      command: echo no-source-1
+      schedule: '@daily'

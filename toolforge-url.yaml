@@ -1,0 +1,13 @@
+source_url: https://raw.githubusercontent.com/NdibeRaymond/toolforge-config-source-test/refs/heads/main/toolforge-url.yaml
+defaults:
+  alerts:
+    notify: false
+components:
+  source-test:
+    component_type: scheduled
+    build:
+      repository: https://gitlab.wikimedia.org/toolforge-repos/sample-static-buildpack-app
+      ref: main
+    run:
+      command: echo version-1
+      schedule: '@daily'

@@ -1,0 +1,16 @@
+source:
+  repository: https://github.com/NdibeRaymond/toolforge-config-source-test.git
+  ref: main
+  path: deployment/toolforge.yaml
+defaults:
+  alerts:
+    notify: false
+components:
+  source-test:
+    component_type: scheduled
+    build:
+      repository: https://gitlab.wikimedia.org/toolforge-repos/sample-static-buildpack-app
+      ref: main
+    run:
+      command: echo from-subdirectory
+      schedule: '@daily'
